@@ -93,7 +93,7 @@ void vendor_load_properties() {
     char rf_version[PROP_VALUE_MAX];
     int rc;
 
-    rc = property_get("ro.cm.device", device, NULL);
+    rc = property_get("ro.reaper.device", device, NULL);
     if (!rc || strncmp(device, "oneplus3", PROP_VALUE_MAX))
         return;
 
@@ -109,4 +109,3 @@ void vendor_load_properties() {
 
     init_alarm_boot_properties();
 }
-
