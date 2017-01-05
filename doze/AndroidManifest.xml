@@ -34,14 +34,14 @@
             android:label="@string/ambient_display_title"
             android:theme="@style/DozeSettings">
             <intent-filter>
-                <action android:name="org.cyanogenmod.settings.device.DOZE_SETTINGS" />
+                <action android:name="com.android.settings.device.DOZE_SETTINGS" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
             <meta-data
-                android:name="org.cyanogenmod.settings.summary.receiver"
+                android:name="com.android.settings.summary.receiver"
                 android:value="com.cyanogenmod.settings.doze.DozeReceiver" />
             <meta-data
-                android:name="org.cyanogenmod.settings.summary.key"
+                android:name="com.android.settings.summary.key"
                 android:value="doze_device_settings" />
         </activity>
 
